@@ -1,0 +1,41 @@
+{
+  "name": "rw-lock",
+  "type": "module",
+  "version": "0.0.0-dev.0",
+  "description": "A read and write lock module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "test": "vitest"
+  },
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fy-store/rw-lock.git"
+  },
+  "keywords": [
+    "lock",
+    "read-write lock"
+  ],
+  "author": "feiYu <feiyucode@gmail.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.3"
+  },
+  "volta": {
+    "node": "22.16.0"
+  }
+}
